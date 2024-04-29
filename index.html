@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-	<meta name="generator" content="Hugo 0.124.1">
+	<meta name="generator" content="Hugo 0.125.4">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport"
@@ -163,18 +163,18 @@
                                 
                                     
                                     <li class="sidebar-item">
-                                        <a href="#fd71852fd52d5e18ef4f9a252f1eac58" class="smooth">
+                                        <a href="#c1dbcf0924409957af3b78d31c7322c4" class="smooth">
                                             <i class="far fa-folder-open fa-lg fa-lg icon-fw icon-lg mr-2"></i>
-                                            <span>AI搜索</span>
+                                            <span>AI写作</span>
                                         </a>
                                     </li>
                                     
                                 
                                     
                                     <li class="sidebar-item">
-                                        <a href="#c1dbcf0924409957af3b78d31c7322c4" class="smooth">
+                                        <a href="#fd71852fd52d5e18ef4f9a252f1eac58" class="smooth">
                                             <i class="far fa-folder-open fa-lg fa-lg icon-fw icon-lg mr-2"></i>
-                                            <span>AI写作</span>
+                                            <span>AI搜索</span>
                                         </a>
                                     </li>
                                     
@@ -320,7 +320,197 @@
     </div>
 
 
-<div style="hight: 1px;"></div>
+<style>
+    .header-big:not(.no-bg) .s-type-list{color:#000dff}
+</style>
+<div class="header-big  post-top css-color mb-4" >
+    <div class="bulletin-big">
+        <div class="container" style="color: black; margin-block: 50px;">
+            <div class="s-title">
+                <h1 class="text-center" style="font-size: 4rem;">AI工具箱</h1>
+                <h3 class="text-center" style="font-size: 3rem;">AI工具汇聚,全方位满足你的各种需求</h3>
+            </div>
+        </div>
+    </div>
+    <div class="s-search">
+        <div id="search" class="s-search mx-auto">
+            <div id="search-list-menu" class="hide-type-list">
+                <div class="s-type text-center">
+                    <div class="s-type-list big">
+                        <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
+                        <label for="type-baidu" data-id="group-a"><span>常用</span></label>
+                        <label for="type-baidu1" data-id="group-b"><span>搜索</span></label>
+                        <label for="type-whois" data-id="group-c"><span>工具</span></label>
+                        <label for="type-zhihu" data-id="group-d"><span>社区</span></label>
+                        <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
+                        <label for="type-zhaopin" data-id="group-f"><span>求职</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://www.baidu.com?s=" method="get" target="_blank" class="super-search-fm">
+                <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei=""
+                    placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
+                <button class="submit" type="submit"><i class="iconfont icon-search"></i></button>
+            </form>
+
+            <div id="search-list" class="hide-type-list">
+                <div class="search-group group-a">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" checked="checked" id="type-baidu"
+                                value="https://www.baidu.com/s?wd=" data-placeholder="百度一下，你就知道">
+                            <label for="type-baidu"><span class="text-muted-new">百度</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-bing"
+                                value="https://cn.bing.com/search?q=" data-placeholder="微软 Bing 搜索">
+                            <label for="type-bing"><span class="text-muted-new">必应</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-google"
+                                value="https://www.google.com/search?q=" data-placeholder="谷歌搜索">
+                            <label for="type-google"><span class="text-muted-new">谷歌</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-anaconda"
+                                value="https://anaconda.org/search?q=" data-placeholder="Anaconda 软件搜索">
+                            <label for="type-anaconda"><span class="text-muted-new">软件</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-pubmed"
+                                value="https://pubmed.ncbi.nlm.nih.gov/?term=" data-placeholder="PubMed 搜索/文章标题/关键字">
+                            <label for="type-pubmed"><span class="text-muted-new">文献</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-group group-b">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" id="type-baidu1"
+                                value="https://www.baidu.com/s?wd=" data-placeholder="百度一下，你就知道">
+                            <label for="type-baidu1"><span class="text-muted-new">百度</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-google1"
+                                value="https://www.google.com/search?q=" data-placeholder="谷歌搜索">
+                            <label for="type-google1"><span class="text-muted-new">谷歌</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-360" value="https://www.so.com/s?q="
+                                data-placeholder="360 好搜">
+                            <label for="type-360"><span class="text-muted-new">360</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-sogo"
+                                value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索">
+                            <label for="type-sogo"><span class="text-muted-new">搜狗</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-bing1"
+                                value="https://cn.bing.com/search?q=" data-placeholder="微软 Bing 搜索">
+                            <label for="type-bing1"><span class="text-muted-new">必应</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q="
+                                data-placeholder="UC 移动端搜索">
+                            <label for="type-sm"><span class="text-muted-new">神马</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-group group-c">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" id="type-br" value="https://rank.chinaz.com/all/"
+                                data-placeholder="请输入网址(不带 https://)">
+                            <label for="type-br"><span class="text-muted-new">权重查询</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-links" value="https://link.chinaz.com/"
+                                data-placeholder="请输入网址(不带 https://)">
+                            <label for="type-links"><span class="text-muted-new">友链检测</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-whois" value="https://who.is/whois/"
+                                data-placeholder="请输入网址(不带 https://)">
+                            <label for="type-whois"><span class="text-muted-new">域名信息查询</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-ping" value="https://ping.chinaz.com/"
+                                data-placeholder="请输入网址(不带 https://)">
+                            <label for="type-ping"><span class="text-muted-new">PING 检测</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-404"
+                                value="https://tool.chinaz.com/Links/?DAddress=" data-placeholder="请输入网址(不带https://)">
+                            <label for="type-404"><span class="text-muted-new">死链检测</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-ciku" value="https://www.ciku5.com/s?wd="
+                                data-placeholder="请输入关键词">
+                            <label for="type-ciku"><span class="text-muted-new">关键词挖掘</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-group group-d">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" id="type-zhihu"
+                                value="https://www.zhihu.com/search?type=content&q=" data-placeholder="知乎">
+                            <label for="type-zhihu"><span class="text-muted-new">知乎</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-wechat"
+                                value="https://weixin.sogou.com/weixin?type=2&query=" data-placeholder="微信">
+                            <label for="type-wechat"><span class="text-muted-new">微信</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-weibo" value="https://s.weibo.com/weibo/"
+                                data-placeholder="微博">
+                            <label for="type-weibo"><span class="text-muted-new">微博</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-douban"
+                                value="https://www.douban.com/search?q=" data-placeholder="豆瓣">
+                            <label for="type-douban"><span class="text-muted-new">豆瓣</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-group group-e">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" id="type-taobao1"
+                                value="https://s.taobao.com/search?q=" data-placeholder="淘宝">
+                            <label for="type-taobao1"><span class="text-muted-new">淘宝</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-jd"
+                                value="https://search.jd.com/Search?keyword=" data-placeholder="京东">
+                            <label for="type-jd"><span class="text-muted-new">京东</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-xiachufang"
+                                value="https://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房">
+                            <label for="type-xiachufang"><span class="text-muted-new">下厨房</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-xiangha"
+                                value="https://www.xiangha.com/so/?q=caipu&s=" data-placeholder="香哈菜谱">
+                            <label for="type-xiangha"><span class="text-muted-new">香哈菜谱</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-12306" value="https://www.12306.cn/?"
+                                data-placeholder="12306">
+                            <label for="type-12306"><span class="text-muted-new">12306</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?"
+                                data-placeholder="去哪儿">
+                            <label for="type-qunar"><span class="text-muted-new">去哪儿</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-group group-f">
+                    <ul class="search-type">
+                        <li><input hidden="" type="radio" name="type" id="type-zhaopin"
+                                value="https://sou.zhaopin.com/jobs/searchresult.ashx?kw=" data-placeholder="智联招聘">
+                            <label for="zhaopin"><span class="text-muted-new">智联招聘</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-51job" value="https://search.51job.com/?"
+                                data-placeholder="前程无忧">
+                            <label for="type-51job"><span class="text-muted-new">前程无忧</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-lagou"
+                                value="https://www.lagou.com/jobs/list_" data-placeholder="拉钩网">
+                            <label for="type-lagou"><span class="text-muted-new">拉钩网</span></label>
+                        </li>
+                        <li><input hidden="" type="radio" name="type" id="type-liepin"
+                                value="https://www.liepin.com/zhaopin/?key=" data-placeholder="猎聘网">
+                            <label for="type-liepin"><span class="text-muted-new">猎聘网</span></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card search-smart-tips search-hot-text">
+                <ul id="word" style="display: none"></ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
 <div id="content" class="content-site customize-site">
     
@@ -336,6 +526,105 @@
             </div>
             
             <div class="row">
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://yiyan.baidu.com" target="_blank" data-id="" data-url="https://yiyan.baidu.com" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="文心一言是由百度公司开发的人工智能语言模型">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://api.iowen.cn/favicon/yiyan.baidu.com.png" data-src="https://api.iowen.cn/favicon/yiyan.baidu.com.png"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="文心一言">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>文心一言</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">文心一言是由百度公司开发的人工智能语言模型</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://yiyan.baidu.com" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://wenku.baidu.com/" target="_blank" data-id="" data-url="https://wenku.baidu.com/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="一站式AI内容创作&amp;文档资料平台">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://api.iowen.cn/favicon/wenku.baidu.com.png" data-src="https://api.iowen.cn/favicon/wenku.baidu.com.png"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="百度文库">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>百度文库</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">一站式AI内容创作&amp;文档资料平台</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://wenku.baidu.com/" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://kimi.moonshot.cn/" target="_blank" data-id="" data-url="https://kimi.moonshot.cn/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="Kimi AI">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://statics.moonshot.cn/kimi-chat/favicon.ico" data-src="https://statics.moonshot.cn/kimi-chat/favicon.ico"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="Kimi">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>Kimi</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">Kimi AI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://kimi.moonshot.cn/" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
                 
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
                     <div class="url-body default">
@@ -364,39 +653,6 @@
                             </div>
                         </a>
                         <a href="https://tongyi.aliyun.com/qianwen" class="togo text-center text-muted is-views" data-id="689"
-                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                            <i class="iconfont icon-goto"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
-			
-			
-                            <a href="https://tongyi.aliyun.com/wanxiang/" target="_blank" data-id="" data-url="https://tongyi.aliyun.com/wanxiang/" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="图片生成等功能">
-			
-                            <div class="card-body">
-                                <div class="url-content d-flex align-items-center">
-                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                        
-					    
-					    <img class="lazy" src="https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png" data-src="https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="通义万相">
-					    
-                                        
-                                    </div>
-                                    <div class="url-info flex-fill">
-                                        <div class="text-sm overflowClip_1">
-                                            <strong>通义万相</strong>
-                                        </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">图片生成等功能</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://tongyi.aliyun.com/wanxiang/" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -448,7 +704,7 @@
                                     <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                         
 					    
-					    <img class="lazy" src="https://xinghuo.xfyun.cn/favicon.ico" data-src="https://xinghuo.xfyun.cn/favicon.ico"
+					    <img class="lazy" src="http://www.ailookme.com/wp-content/uploads/2023/12/%e5%86%85%e5%ae%b9%e5%a4%a7%e5%b8%88logo.png" data-src="http://www.ailookme.com/wp-content/uploads/2023/12/%e5%86%85%e5%ae%b9%e5%a4%a7%e5%b8%88logo.png"
                                                 onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="星火">
 					    
                                         
@@ -463,72 +719,6 @@
                             </div>
                         </a>
                         <a href="https://xinghuo.xfyun.cn/home" class="togo text-center text-muted is-views" data-id="689"
-                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                            <i class="iconfont icon-goto"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
-			
-			
-                            <a href="https://yiyan.baidu.com/" target="_blank" data-id="" data-url="https://yiyan.baidu.com/" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="文心一言是由百度公司开发的人工智能语言模型">
-			
-                            <div class="card-body">
-                                <div class="url-content d-flex align-items-center">
-                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                        
-					    
-					    <img class="lazy" src="https://yiyan.baidu.com/favicon.ico" data-src="https://yiyan.baidu.com/favicon.ico"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="文心一言">
-					    
-                                        
-                                    </div>
-                                    <div class="url-info flex-fill">
-                                        <div class="text-sm overflowClip_1">
-                                            <strong>文心一言</strong>
-                                        </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">文心一言是由百度公司开发的人工智能语言模型</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://yiyan.baidu.com/" class="togo text-center text-muted is-views" data-id="689"
-                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                            <i class="iconfont icon-goto"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
-			
-			
-                            <a href="https://moss.fastnlp.top/" target="_blank" data-id="" data-url="https://moss.fastnlp.top/" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型">
-			
-                            <div class="card-body">
-                                <div class="url-content d-flex align-items-center">
-                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                        
-					    
-					    <img class="lazy" src="https://moss.fastnlp.top/favicon.ico" data-src="https://moss.fastnlp.top/favicon.ico"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="复旦-MOSS">
-					    
-                                        
-                                    </div>
-                                    <div class="url-info flex-fill">
-                                        <div class="text-sm overflowClip_1">
-                                            <strong>复旦-MOSS</strong>
-                                        </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://moss.fastnlp.top/" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -613,7 +803,7 @@
                                     <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                         
 					    
-					    <img class="lazy" src="https://chat.openai.com/favicon.ico" data-src="https://chat.openai.com/favicon.ico"
+					    <img class="lazy" src="https://api.iowen.cn/favicon/chat.openai.com.png" data-src="https://api.iowen.cn/favicon/chat.openai.com.png"
                                                 onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="ChatGPT">
 					    
                                         
@@ -638,29 +828,62 @@
                     <div class="url-body default">
 			
 			
-                            <a href="https://writegpt.ai" target="_blank" data-id="" data-url="https://writegpt.ai" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="AI写作文、分析的集成式插件">
+                            <a href="https://moss.fastnlp.top/" target="_blank" data-id="" data-url="https://moss.fastnlp.top/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型">
 			
                             <div class="card-body">
                                 <div class="url-content d-flex align-items-center">
                                     <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                         
 					    
-					    <img class="lazy" src="https://writegpt.ai/mainLog.svg" data-src="https://writegpt.ai/mainLog.svg"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="WriteGPT">
+					    <img class="lazy" src="https://moss.fastnlp.top/favicon.ico" data-src="https://moss.fastnlp.top/favicon.ico"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="复旦-MOSS">
 					    
                                         
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>WriteGPT</strong>
+                                            <strong>复旦-MOSS</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">AI写作文、分析的集成式插件</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="https://writegpt.ai" class="togo text-center text-muted is-views" data-id="689"
+                        <a href="https://moss.fastnlp.top/" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="" target="_blank" data-id="" data-url="" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://th.bing.com/th/id/R.e80c34922fbe07e300153e0dbe6316ab?rik=7Sq9Z1dTEiojbA&amp;riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f06-13%2f85293%2fwater_85293_698_698_.png&amp;ehk=7zpQyZBtybSgn2KgMvsLBhOQ2U4r%2fKVKMuycPDzryew%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" data-src="https://th.bing.com/th/id/R.e80c34922fbe07e300153e0dbe6316ab?rik=7Sq9Z1dTEiojbA&amp;riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f06-13%2f85293%2fwater_85293_698_698_.png&amp;ehk=7zpQyZBtybSgn2KgMvsLBhOQ2U4r%2fKVKMuycPDzryew%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="添加">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>添加</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -755,7 +978,7 @@
                     <div class="url-body default">
 			
 			
-                            <a href="https://yiyan.baidu.com/" target="_blank" data-id="" data-url="https://yiyan.baidu.com/" 
+                            <a href="https://yiyan.baidu.com" target="_blank" data-id="" data-url="https://yiyan.baidu.com" 
                             class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="文心一言是由百度公司开发的人工智能语言模型">
 			
                             <div class="card-body">
@@ -763,7 +986,7 @@
                                     <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                         
 					    
-					    <img class="lazy" src="https://yiyan.baidu.com/favicon.ico" data-src="https://yiyan.baidu.com/favicon.ico"
+					    <img class="lazy" src="https://api.iowen.cn/favicon/yiyan.baidu.com.png" data-src="https://api.iowen.cn/favicon/yiyan.baidu.com.png"
                                                 onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="文心一言">
 					    
                                         
@@ -777,40 +1000,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://yiyan.baidu.com/" class="togo text-center text-muted is-views" data-id="689"
-                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                            <i class="iconfont icon-goto"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                    <div class="url-body default">
-			
-			
-                            <a href="https://moss.fastnlp.top/" target="_blank" data-id="" data-url="https://moss.fastnlp.top/" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型">
-			
-                            <div class="card-body">
-                                <div class="url-content d-flex align-items-center">
-                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                        
-					    
-					    <img class="lazy" src="https://moss.fastnlp.top/favicon.ico" data-src="https://moss.fastnlp.top/favicon.ico"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="复旦-MOSS">
-					    
-                                        
-                                    </div>
-                                    <div class="url-info flex-fill">
-                                        <div class="text-sm overflowClip_1">
-                                            <strong>复旦-MOSS</strong>
-                                        </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://moss.fastnlp.top/" class="togo text-center text-muted is-views" data-id="689"
+                        <a href="https://yiyan.baidu.com" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -877,6 +1067,39 @@
                             </div>
                         </a>
                         <a href="https://www.baichuan-ai.com/home" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://moss.fastnlp.top/" target="_blank" data-id="" data-url="https://moss.fastnlp.top/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://moss.fastnlp.top/favicon.ico" data-src="https://moss.fastnlp.top/favicon.ico"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="复旦-MOSS">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>复旦-MOSS</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">复旦大学MOSS大模型是国内第一个发布的对话式大型语言模型</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://moss.fastnlp.top/" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
@@ -1076,8 +1299,8 @@
             
             <div class="d-flex flex-fill">
                 <h4 class="text-gray text-lg mb-4">
-                    <i class="site-tag iconfont icon-tag icon-lg mr-1" id="fd71852fd52d5e18ef4f9a252f1eac58"></i>
-                    AI搜索
+                    <i class="site-tag iconfont icon-tag icon-lg mr-1" id="c1dbcf0924409957af3b78d31c7322c4"></i>
+                    AI写作
                 </h4>
                 
             </div>
@@ -1088,52 +1311,67 @@
                     <div class="url-body default">
 			
 			
-                            <a href="https://metaso.cn/" target="_blank" data-id="" data-url="https://metaso.cn/" 
-                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="AI搜索工具">
+                            <a href="https://wenku.baidu.com/" target="_blank" data-id="" data-url="https://wenku.baidu.com/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="一站式AI内容创作&amp;文档资料平台">
 			
                             <div class="card-body">
                                 <div class="url-content d-flex align-items-center">
                                     <div class="url-img mr-2 d-flex align-items-center justify-content-center">
                                         
 					    
-					    <img class="lazy" src="https://metaso.cn/favicon.ico" data-src="https://metaso.cn/favicon.ico"
-                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="秘塔AI搜索">
+					    <img class="lazy" src="https://api.iowen.cn/favicon/wenku.baidu.com.png" data-src="https://api.iowen.cn/favicon/wenku.baidu.com.png"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="百度文库">
 					    
                                         
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>秘塔AI搜索</strong>
+                                            <strong>百度文库</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">AI搜索工具</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">一站式AI内容创作&amp;文档资料平台</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="https://metaso.cn/" class="togo text-center text-muted is-views" data-id="689"
+                        <a href="https://wenku.baidu.com/" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
                     </div>
                 </div>
                 
-            </div>
-            <br />
-            
-        
-    
-        
-	    
-            
-            <div class="d-flex flex-fill">
-                <h4 class="text-gray text-lg mb-4">
-                    <i class="site-tag iconfont icon-tag icon-lg mr-1" id="c1dbcf0924409957af3b78d31c7322c4"></i>
-                    AI写作
-                </h4>
-                
-            </div>
-            
-            <div class="row">
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://kimi.moonshot.cn/" target="_blank" data-id="" data-url="https://kimi.moonshot.cn/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="Kimi AI">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://statics.moonshot.cn/kimi-chat/favicon.ico" data-src="https://statics.moonshot.cn/kimi-chat/favicon.ico"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="Kimi">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>Kimi</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">Kimi AI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://kimi.moonshot.cn/" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
                 
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
                     <div class="url-body default">
@@ -1195,6 +1433,57 @@
                             </div>
                         </a>
                         <a href="https://chatdoc.com/" class="togo text-center text-muted is-views" data-id="689"
+                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                            <i class="iconfont icon-goto"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <br />
+            
+        
+    
+        
+	    
+            
+            <div class="d-flex flex-fill">
+                <h4 class="text-gray text-lg mb-4">
+                    <i class="site-tag iconfont icon-tag icon-lg mr-1" id="fd71852fd52d5e18ef4f9a252f1eac58"></i>
+                    AI搜索
+                </h4>
+                
+            </div>
+            
+            <div class="row">
+                
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                    <div class="url-body default">
+			
+			
+                            <a href="https://metaso.cn/" target="_blank" data-id="" data-url="https://metaso.cn/" 
+                            class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" data-original-title="AI搜索工具">
+			
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                        
+					    
+					    <img class="lazy" src="https://metaso.cn/favicon.ico" data-src="https://metaso.cn/favicon.ico"
+                                                onerror="javascript:this.src='assets\/images\/logos\/default.webp'" alt="秘塔AI搜索">
+					    
+                                        
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>秘塔AI搜索</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">AI搜索工具</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://metaso.cn/" class="togo text-center text-muted is-views" data-id="689"
                             data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
                             <i class="iconfont icon-goto"></i>
                         </a>
